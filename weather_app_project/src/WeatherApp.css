@@ -1,0 +1,60 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+.cardContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.cardContainer .MuiCard-root {
+  border-radius: var(--border-radius) !important;
+  overflow: hidden !important;
+  width: 400px !important; 
+  max-width: 90% !important;
+}
+
+.cardContainer .MuiCardMedia-root {
+  height: 160px !important; 
+}
+
+.cardContainer .MuiTypography-h5,
+.cardContainer .MuiTypography-body2 {
+  color: var(--card-text-color) !important; 
+  line-height: 1.7 !important;
+}
+
+
+@media (max-width: 480px) {
+  .container {
+    padding: 15px;
+  }
+  .InfoBox h1 {
+    font-size: 1.2rem;
+  }
+  .SearchBox button, .SearchBox input[type="text"] {
+    font-size: 0.9rem;
+  }
+}
